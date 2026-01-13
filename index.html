@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Ultimate Hangman</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🎯 Hangman</h1>
+    <div class="stats">
+      <span id="wins">Wins: 0</span>
+      <span id="losses">Losses: 0</span>
+      <button id="toggleTheme">🌙</button>
+    </div>
+  </header>
+
+  <main>
+    <canvas id="hangman" width="250" height="300"></canvas>
+
+    <p id="category"></p>
+    <p id="word"></p>
+
+    <p id="message"></p>
+
+    <div id="keyboard"></div>
+
+    <div class="controls">
+      <button id="newGame">🔄 New Game</button>
+    </div>
+  </main>
+
+  <audio id="correctSound" src="https://assets.mixkit.co/sfx/preview/mixkit-correct-answer-tone-2870.mp3"></audio>
+  <audio id="wrongSound" src="https://assets.mixkit.co/sfx/preview/mixkit-wrong-answer-fail-notification-946.mp3"></audio>
+  <audio id="winSound" src="https://assets.mixkit.co/sfx/preview/mixkit-game-level-completed-2059.mp3"></audio>
+  <audio id="loseSound" src="https://assets.mixkit.co/sfx/preview/mixkit-player-losing-or-failing-2042.mp3"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
